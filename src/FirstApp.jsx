@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 const getResult = (a, b) => {
     return a+b;
 }
@@ -14,4 +14,9 @@ export const FirstApp = ({title, subTitle}) => {
             <p>esto es para ver el uso de Fragment</p>
         </>
 );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired
 }
