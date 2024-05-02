@@ -9,6 +9,6 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('app')).render(
     <React.StrictMode>
         <HelloWorldApp/>
-        <FirstApp/>
+        <FirstApp title="Hola, soy John" subTitle={123}/>
     </React.StrictMode>
 );
