@@ -8,11 +8,23 @@ export const CounterApp = ({value}) => {
         setCounter((c) => c+1);
         console.log(counter);
     }
+    const handleSub = () => {
+        // setCounter(counter +1);
+        setCounter((c) => c-1);
+        console.log(counter);
+    }
+    const handleReset = () => {
+        // setCounter(counter +1);
+        setCounter((c) => c= value);
+        console.log(counter);
+    }
     return (
         <>
             <h1>CounterApp</h1>
             <h2> { counter } </h2>
             <button onClick={handleAdd}>+1</button>
+            <button onClick={handleSub}>-1</button>
+            <button onClick={handleReset}>Reset</button>
         </>
     );
 }
