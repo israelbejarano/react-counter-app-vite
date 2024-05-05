@@ -23,7 +23,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    title: 'título por defecto',
+    // title: 'título por defecto',
     subTitle: 0,
     name: 'Israel Bejarano Álvrez'
 }
